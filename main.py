@@ -30,6 +30,8 @@ def miles_to_kilometre():
     int_entry = float(str_entry)
     int_entry *= 1.6
     solution.config(text=int_entry)
+
+
 def convert_button_clicked_miles_to_kilometre():
     if km.grid(column=2, row=1) == km.grid(column=2, row=1):
         miles.grid(column=2, row=1)
@@ -37,11 +39,13 @@ def convert_button_clicked_miles_to_kilometre():
         button.config(command=kilometre_to_miles)
         convert_button.config(command=convert_button_clicked_kilometre_to_miles)
 
+
 def kilometre_to_miles():
     str_entry = entry.get()
     int_entry = float(str_entry)
     int_entry /= 1.6
     solution.config(text=int_entry)
+
 
 def convert_button_clicked_kilometre_to_miles():
     if km.grid(column=2, row=0) == km.grid(column=2, row=0):
